@@ -1,0 +1,91 @@
+/* Wszystkie klasy z prefiksem mwp-, żeby nie kolidowały ze stylami Motowarsztatu. */
+
+#mwp-root {
+  position: fixed;
+  bottom: 24px;
+  z-index: 2147483647;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #0f172a;
+}
+#mwp-root.mwp-right { right: 24px; }
+#mwp-root.mwp-left { left: 24px; }
+
+#mwp-root button { font: inherit; cursor: pointer; }
+
+#mwp-root .mwp-toggle {
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  background: #1e40af;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+#mwp-root .mwp-panel {
+  position: absolute;
+  bottom: 56px;
+  width: 300px;
+  max-height: 70vh;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+#mwp-root.mwp-right .mwp-panel { right: 0; }
+#mwp-root.mwp-left .mwp-panel { left: 0; }
+#mwp-root .mwp-collapsed { display: none; }
+
+#mwp-root .mwp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #1e40af;
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+}
+#mwp-root .mwp-close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#mwp-root .mwp-body { padding: 10px 12px; }
+#mwp-root .mwp-section { margin-bottom: 10px; }
+#mwp-root .mwp-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+#mwp-root .mwp-empty { color: #94a3b8; font-style: italic; }
+#mwp-root .mwp-list { list-style: none; margin: 0; padding: 0; }
+#mwp-root .mwp-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+#mwp-root .mwp-list code { font-family: ui-monospace, Consolas, monospace; }
+#mwp-root .mwp-copy {
+  border: none;
+  background: none;
+  color: #1e40af;
+}
+
+#mwp-root .mwp-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+#mwp-root .mwp-btn {
+  padding: 6px 10px;
+  border: 1px solid #1e40af;
+  border-radius: 6px;
+  background: #fff;
+  color: #1e40af;
+}
+#mwp-root .mwp-btn:hover { background: #eff6ff; }

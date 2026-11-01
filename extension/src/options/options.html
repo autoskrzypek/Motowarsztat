@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Ustawienia – Motowarsztat Pomocnik</title>
+  <link rel="stylesheet" href="../ui.css">
+</head>
+<body class="options">
+  <header>
+    <img src="../../icons/icon48.png" alt="" width="32" height="32">
+    <h1>Motowarsztat Pomocnik – ustawienia</h1>
+  </header>
+
+  <section>
+    <h2>Adresy Motowarsztatu</h2>
+    <p class="muted">Pomocnik działa tylko na stronach dodanych poniżej. Chrome poprosi o zgodę na dostęp do każdej z nich.</p>
+    <form id="add-origin">
+      <input id="origin-input" type="text" placeholder="np. app.motowarsztat.pl" autocomplete="off" required>
+      <button type="submit" class="primary">Dodaj</button>
+    </form>
+    <p id="origin-error" class="error" hidden></p>
+    <ul id="origins"></ul>
+  </section>
+
+  <section>
+    <h2>Panel na stronie</h2>
+    <label class="row">
+      <input type="checkbox" id="panelEnabled">
+      Pokazuj przycisk i panel pomocnika
+    </label>
+    <label class="row">
+      Pozycja:
+      <select id="panelPosition">
+        <option value="right">prawy dolny róg</option>
+        <option value="left">lewy dolny róg</option>
+      </select>
+    </label>
+  </section>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

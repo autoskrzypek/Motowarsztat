@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <title>Motowarsztat Pomocnik</title>
+  <link rel="stylesheet" href="../ui.css">
+</head>
+<body class="popup">
+  <header>
+    <img src="../../icons/icon32.png" alt="" width="20" height="20">
+    <h1>Motowarsztat Pomocnik</h1>
+  </header>
+
+  <section id="inactive" hidden>
+    <p>Pomocnik nie jest włączony na tej stronie.</p>
+    <p class="muted" id="current-origin"></p>
+    <button id="enable-here" class="primary">Włącz na tej stronie</button>
+  </section>
+
+  <section id="unsupported" hidden>
+    <p class="muted">Na tej stronie nie można uruchomić rozszerzenia.</p>
+  </section>
+
+  <section id="active" hidden>
+    <dl>
+      <dt>VIN</dt><dd id="vins">–</dd>
+      <dt>Rejestracje</dt><dd id="plates">–</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <a href="#" id="open-options">Ustawienia</a>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
